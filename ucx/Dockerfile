@@ -3,7 +3,7 @@ ARG BASE
 FROM ${REPOSITORY}:${BASE}
 LABEL maintainer="Marco Bettiol <marco.bettiol@cscs.ch>"
 
-ARG UCX_VERSION=1.10.1
+ARG UCX_VERSION=1.14.1
 RUN cd /tmp && \
     git clone https://github.com/openucx/ucx.git && \
     cd ucx && \
